@@ -1,0 +1,9 @@
+{
+  "name": "office-wifi-portal",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Office Wi-Fi login — static UI template",
+  "scripts": {
+    "build": "node -e \"const fs=require('fs');const files=['login.html','alogin.html','status.html','logout.html','css/main.css','js/main.js','assets/logo.svg'];let ok=true;for(const f of files){if(!fs.existsSync(f)){console.error('Missing: '+f);ok=false;}}if(ok){console.log('All template files verified. Build passed.');}else{process.exit(1);}\""
+  }
+}

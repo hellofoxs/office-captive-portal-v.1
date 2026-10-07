@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Office Wi-Fi — Status</title>
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+      <a class="header__brand" href="login.html">
+        <img src="assets/logo.svg" alt="Office Wi-Fi logo" />
+        <span>Office Wi-Fi</span>
+      </a>
+      <span class="header__divider"></span>
+      <span class="header__label">Network Portal</span>
+    </div>
+  </header>
+
+  <!-- PAGE -->
+  <main class="page">
+    <div class="stack" style="max-width: 640px; width: 100%;">
+
+      <!-- Status header -->
+      <div class="status-header">
+        <div class="stack stack--xs">
+          <h1 class="heading heading--lg">Connected</h1>
+          <p class="text">Your device is connected to the office network.</p>
+        </div>
+        <span class="badge badge--success">
+          <span class="badge__dot badge__dot--pulse"></span>
+          Connected
+        </span>
+      </div>
+
+      <!-- Connection card -->
+      <div class="card">
+        <div class="card-header">
+          <h2 class="section-title">Connection</h2>
+        </div>
+        <div class="card-body">
+          <ul class="list">
+            <li class="list-item">
+              <span class="list-item__label">Username</span>
+              <span class="list-item__value">alex</span>
+            </li>
+            <li class="list-item">
+              <span class="list-item__label">IP Address</span>
+              <span class="list-item__value">192.168.1.24</span>
+            </li>
+            <li class="list-item">
+              <span class="list-item__label">Device</span>
+              <span class="list-item__value">MacBook Pro</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Session card -->
+      <div class="card">
+        <div class="card-header">
+          <h2 class="section-title">Session</h2>
+        </div>
+        <div class="card-body">
+          <ul class="list">
+            <li class="list-item">
+              <span class="list-item__label">Connected</span>
+              <span class="list-item__value" id="connected-time">01:24:18</span>
+            </li>
+            <li class="list-item">
+              <span class="list-item__label">Session Remaining</span>
+              <span class="list-item__value" id="remaining-time">02:35:42</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Logout action -->
+      <div>
+        <button class="button button-primary button--block" id="logout-button">
+          Logout
+        </button>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p class="footer__text">Office Wi-Fi Network — Secure Connection Portal</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

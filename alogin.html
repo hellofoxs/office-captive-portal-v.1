@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Office Wi-Fi — Connecting</title>
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+      <a class="header__brand" href="login.html">
+        <img src="assets/logo.svg" alt="Office Wi-Fi logo" />
+        <span>Office Wi-Fi</span>
+      </a>
+      <span class="header__divider"></span>
+      <span class="header__label">Network Portal</span>
+    </div>
+  </header>
+
+  <!-- PAGE -->
+  <main class="page" data-page="alogin">
+    <div class="stack" style="max-width: 420px; width: 100%;">
+
+      <!-- Logo -->
+      <div class="logo logo--lg" style="justify-content: center;">
+        <img src="assets/logo.svg" alt="Office Wi-Fi logo" />
+      </div>
+
+      <!-- Connecting card -->
+      <div class="card card--center">
+        <div class="card-body" style="align-items: center; gap: var(--space-md);">
+          <div class="stack stack--sm" style="align-items: center;">
+            <h1 class="heading heading--lg">Connecting...</h1>
+            <p class="text">Preparing your network session.</p>
+          </div>
+
+          <div class="loading-spinner loading-spinner--lg" role="status" aria-label="Connecting to network"></div>
+
+          <p class="text text--sm text-subtle">Please wait.</p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p class="footer__text">Office Wi-Fi Network — Secure Connection Portal</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
